@@ -1,7 +1,15 @@
-import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+import { HomeComponent } from './home/home.component';
+import { MapJobSearchComponent } from './map-job-search/map-job-search.component';
+import { NgModule } from '@angular/core';
+import { SpectrumsComponent } from './spectrums/spectrums.component';
+
+const routes: Routes = [
+  { path: '', component: HomeComponent },
+  { path: 'job-search', component: MapJobSearchComponent },
+  { path: 'spectrums', component: SpectrumsComponent },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
